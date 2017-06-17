@@ -7,12 +7,14 @@
 
 <body>
 <a-scene>
+
 <!-- Create a sphere for workspace-->
 <a-entity
     geometry="primitive: sphere; radius: 10; segmentsHeight: 20; segmentsWidth: 64"
     position="0 0 0"
-	material="color: #00ffff; side: double"
+	material="color: #000000; side: double">
 </a-entity>
+
 <!-- Create a plane for workspace "floor"-->
 <a-plane
 	geometry="height: 30; width: 30; length: 1"
@@ -20,82 +22,94 @@
 	rotation="-90 0 0"
 	position="0 -5 0">
 </a-plane>
+
+<!-- PARENT PANEL -->
 <a-entity>
-<!-- Create a plane for panel-->
-<a-plane
-	geometry="primitive: plane; height: 1.5; width: 7.5"
-	material="side: double; src: http://vrideas.hamlo.od.ua/panel-bg.png; transparent: true"
-	rotation="-45 0 0"
-	position="0	0 -3">
-</a-plane>
-<!-- Create a button undo for panel-->
-<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="-3 0.1 -2.9"
-	rotation="-45 0 0"
-	material="src: http://vrideas.hamlo.od.ua/btn_panel-undo.png; side: double; transparent: true">
+	<!-- Create a plane for panel-->
+	<a-plane
+		geometry="primitive: plane; height: 1.5; width: 7.5"
+		material="side: double; src: http://vrideas.hamlo.od.ua/panel-bg.png; transparent: true"
+		rotation="-45 0 0"
+		position="0	0 -5">
+	</a-plane>
+	
+	<!-- Create a button undo for panel-->
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="-3 0.1 -4.9"
+		rotation="-45 0 0"
+		material="src: http://vrideas.hamlo.od.ua/btn_panel-undo.png; side: double; transparent: true">
+	</a-entity>
+
+	<!-- Create a button redo for panel-->
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="-1.5 0.1 -4.9"
+		rotation="-45 0 0"
+		material="src: http://vrideas.hamlo.od.ua/btn_panel-redo.png; side: double; transparent: true">
+	</a-entity>
+
+	<!-- Create a button mode switch for panel-->
+	<a-plane
+		geometry="primitive: plane; height: 1; width: 2.74"
+		material="src: http://vrideas.hamlo.od.ua/switch-img.png; side: double; transparent: true"
+		rotation="-45 0 0"
+		position="1 0.1 -4.9">
+	</a-plane>
+
+	<!-- Create a button exit for panel-->
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="3 0.1 -4.9"
+		rotation="-45 0 0"
+		material="src: http://vrideas.hamlo.od.ua/btn_panel-exit.png; side: double; transparent: true">
+	</a-entity>
 </a-entity>
 
-<!-- Create a button redo for panel-->
-<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="-1.5 0.1 -2.9"
-	rotation="-45 0 0"
-	material="src: http://vrideas.hamlo.od.ua/btn_panel-redo.png; side: double; transparent: true">
-</a-entity>
-<!-- Create a button mode switch for panel-->
-<a-plane
-	geometry="primitive: plane; height: 1; width: 2.74"
-	material="src: http://vrideas.hamlo.od.ua/switch-img.png; side: double; transparent: true"
-	rotation="-45 0 0"
-	position="1 0.1 -2.9">
-</a-plane>
-
-<!-- Create a button exit for panel-->
-<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="3 0.1 -2.9"
-	rotation="-45 0 0"
-	material="src: http://vrideas.hamlo.od.ua/btn_panel-exit.png; side: double; transparent: true">
-</a-entity>
-</a-entity>
-
+<!-- PARENT ELEMENT -->
 <a-entity>
 <!-- Create an element example-->
 	<!-- Create a cube for image example-->
 	<a-plane
-	geometry="primitive: plane; height: 1.83; width: 3.08"
-	scale=""
-	material="src: http://vrideas.hamlo.od.ua/Rectangle.png; side: double; transparent: true"
-	position="0 4 -6">
+		geometry="primitive: plane; height: 1.83; width: 3.08"
+		scale=""
+		material="src: http://vrideas.hamlo.od.ua/Rectangle.png; side: double; transparent: true"
+		position="0 4 -6">
 	</a-plane>
+	
 	<!-- Create a button delete for element-->
-		<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="-1.5 4 -5.9"
-	material="src: http://vrideas.hamlo.od.ua/btn_delete.png; side: double; transparent: true">
-		</a-entity>
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="-1.5 4 -5.9"
+		material="src: http://vrideas.hamlo.od.ua/btn_delete.png; side: double; transparent: true">
+	</a-entity>
+	
 	<!-- Create a button copy for element-->
-		<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="0 5 -5.9"
-	material="src: http://vrideas.hamlo.od.ua/btn_copy.png; side: double; transparent: true">
-		</a-entity>
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="0 5 -5.9"
+		material="src: http://vrideas.hamlo.od.ua/btn_copy.png; side: double; transparent: true">
+	</a-entity>
+	
 	<!-- Create a button move x-y for element-->
-		<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="1.5 4 -5.9"
-	material="src: http://vrideas.hamlo.od.ua/btn_move.png; side: double; transparent: true">
-		</a-entity>
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="1.5 4 -5.9"
+		material="src: http://vrideas.hamlo.od.ua/btn_move.png; side: double; transparent: true">
+	</a-entity>
+	
 	<!-- Create a button move z for element-->
-		<a-entity
-    geometry="primitive: circle; radius: 0.5"
-    position="0 3 -5.9"
-	material="src: http://vrideas.hamlo.od.ua/btn_z-index.png; side: double; transparent: true">
-		</a-entity>
+	<a-entity
+		geometry="primitive: circle; radius: 0.5"
+		position="0 3 -5.9"
+		material="src: http://vrideas.hamlo.od.ua/btn_z-index.png; side: double; transparent: true">
+	</a-entity>
 </a-entity>
 
+<!-- create space around -->
 <a-sky color: "#ECECEC"></a-sky>
+
+<!-- where user is watching from-->
 <a-camera position="0 0 0" rotation="0 15 -5" scale="1 1 1"></a-camera>
 </a-entity>
 </a-scene>
