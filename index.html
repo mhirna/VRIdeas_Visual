@@ -16,25 +16,31 @@
 <!-- Create a plane for workspace "floor"-->
 <a-plane
 	geometry="height: 30; width: 30; length: 1"
-	material="color: #ffff00; side: double;"
+	material="color: #c0c0c0; side: double;"
 	rotation="-90 0 0"
 	position="0 -5 0">
 </a-plane>
 
 <!-- Create a plane for panel-->
 <a-plane
-	geometry="primitive: plane; height: 4; width: 6"
+	geometry="primitive: plane; height: 3; width: 8"
 	material="side: double; color: #234ddc;"
 	rotation="-45 0 0"
-	position="0 0 -5">
+	position="0|
+	0 -5">
 </a-plane>
 
 <!-- Create a button redo for panel-->
-<a-entity
-    geometry="primitive: sphere"
-    position="2 2 2"
+<!--<a-entity
+    geometry="primitive: sphere; radius: 1"
+    position="0 0 -4"
 	scale="0 0.4 0"
 	material="color: #ffffff; side: double">
+</a-entity>-->
+<a-entity
+    geometry="primitive: sphere; radius: 0.5; segmentsHeight: 20; segmentsWidth: 64"
+    position="-2 0 -5"
+	material="color: #00ffff; side: double"
 </a-entity>
 
 <!-- Create a button undo for panel-->
@@ -46,13 +52,13 @@
 
 
 <!-- Create an element example-->
-	<!-- Create a cube for image example-->
+	<!-- Create a cube for image example
 	<a-entity
 		geometry="primitive: box"
 		position="-10 0 0"
 		material="color: #00ffff; side: double"
 	</a-entity>
-	<a-image></a-image>
+	<a-image></a-image>-->
 	<!-- Create a button delete for element-->
 	
 	<!-- Create a button copy for element-->
@@ -63,7 +69,7 @@
 
 
 <a-sky color: "#ECECEC"></a-sky>
-<a-camera position="10 4 0" rotation="-30 -30 5" scale="1 1 1"></a-camera>
+<a-camera position="5 2 5" rotation="0 15 -5" scale="1 1 1"></a-camera>
 </a-entity>
 </a-scene>
 </body>
