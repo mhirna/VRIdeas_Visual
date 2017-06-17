@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>VR Ideas</title>
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+<!-- Create a sphere for workspace-->
+<a-entity
+    geometry="primitive: sphere; radius: 10; segmentsHeight: 20; segmentsWidth: 64"
+    position="0 0 0"
+	material="color: #00ffff; side: double"
+</a-entity>
+<!-- Create a plane for workspace "floor"-->
+<a-plane
+	geometry="height: 100; width: 100"
+	material="color: #ffff00"
+	rotation: "0 -90 0">
+</a-plane>
+
+<!-- Create a plane for panel-->
+<a-plane
+	geometry="primitive: plane; height: 4; width: 4"
+	material="side: double; color: #234ddc;"
+	rotation="30 0 0"
+	position="">
+</a-plane>
+
+<!-- Create a button redo for panel-->
+
+<!-- Create a button undo for panel-->
+
+<!-- Create a button mode switch for panel-->
+
+<!-- Create a button exit for panel-->
+
+
+
+<!-- Create an element example-->
+	<!-- Create a cube for image example-->
+	<a-entity
+		geometry="primitive: box"
+		position="0 0 0"
+		material="color: #00ffff; side: double"
+	</a-entity>
+	<a-image></a-image>
+	<!-- Create a button delete for element-->
+	
+	<!-- Create a button copy for element-->
+	
+	<!-- Create a button move x-y for element-->
+	
+	<!-- Create a button move z for element-->
+
+
+<a-sky color: "#ECECEC" geometry="depth: 10; height: 10; width: 10"></a-sky>
+<a-camera position="5 5 0" rotation="5 5 -0.660" scale="1 1 1"></a-camera>
+</a-entity>
+</a-scene>
+</body>
+</html>
