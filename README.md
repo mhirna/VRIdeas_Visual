@@ -1,1 +1,0 @@
-"# VRIdeas_Visual" 
